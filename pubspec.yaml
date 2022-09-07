@@ -1,6 +1,6 @@
 name: eos_icons_flutter
-description: A new Flutter project.
-version: 0.0.1
+description: Icons flutter package made using Dart and powered by EOS Icons.
+version: 0.1.1
 homepage: https://github.com/StarTrooper08/eos_icons_flutter
 
 environment:

@@ -1,3 +1,3 @@
-## 0.0.1
+## 0.1.1
 
-* TODO: Describe initial release.
+- Initial package release with 123 icons set.
