@@ -68,6 +68,71 @@ class _MyHomePageState extends State<MyHomePage> {
 
 ## Contributing
 
+## Flutter Installation
+Refer to this website to [Install Flutter](https://flutter.dev/get-started/) 
+### For linux
+You can install Flutter using the Snap Store, or at the command line:
+
+```snapd
+$ sudo snap install flutter --classic
+```
+Or install manually. Once installed, display your Flutter SDK path by running :
+```snapd
+$ flutter sdk-path
+```
+At last install any remaing dependencies to complete the set up, run following command
+```snapd
+$ flutter doctor
+```
+ Update your Path variable
+-  Add flutter/bin directory in your PATH.
+  
+### For Windows
+1. Get the latest Flutter SDK at [SDK Releases](https://docs.flutter.dev/development/tools/sdk/releases?tab=windows).
+2. Extract the zip file and place at the desired installation location.
+3. Update your path 
+```
+  where flutter dart
+  C:\path-to-flutter-sdk\bin\flutter
+  C:\path-to-flutter-sdk\bin\flutter.bat
+  C:\path-to-dart-sdk\bin\dart.exe        :: this should go after `C:\path-to-flutter-sdk\bin\` commands
+  C:\path-to-flutter-sdk\bin\dart
+  C:\path-to-flutter-sdk\bin\dart.bat
+ ```
+4. Run flutter doctor
+```
+C:\src\flutter>flutter doctor
+```
+
+### For macOS
+If you’re installing on an  [Apple Silicon Mac](https://support.apple.com/en-us/HT211814), you must have the Rosetta translation environment available for  some ancillary tools. You can install this manually by running:
+```snapd
+$ sudo softwareupdate --install-rosetta --agree-to-license
+```
+1. Get  the latest stable release of  flutter SDK  at [SDK Releases](https://docs.flutter.dev/development/tools/sdk/releases?tab=windows).
+2.  Extract the zip file and place at the desired installation location.
+3. Add the flutter tool to path
+```
+ $ export PATH="$PATH:`pwd`/flutter/bin"
+```
+4. Run flutter doctor
+```
+$ flutter doctor
+```
+
+### Run Locally
+Add your Flutter Launcher Icons configuration to your `pubspec.yaml`
+In the  `dependencies:`  section, add the following line:
+```yaml
+dependencies:
+  eos_icons_flutter: <latest_version>
+ ```
+### 2. Run the package
+After setting up the configuration, all that is left to do is run the package.
+```
+flutter pub get
+flutter pub run eos_icons_flutter
+ ```
 ### Pre-requisites
 
 ### Run Locally
